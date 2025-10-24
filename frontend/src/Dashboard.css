@@ -1,0 +1,71 @@
+/* File: Dashboard.css (Add or verify these styles) */
+
+/* General Layout */
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f7f6; 
+}
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+}
+.welcome-header {
+    /* Use the bright gradient color for the header bar */
+    background: linear-gradient(135deg, #4F46E5, #9333EA); 
+    color: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.welcome-header h2 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* Sidebar Navigation (Ensure these styles are present) */
+.sidebar {
+    width: 250px;
+    background-color: #ffffff; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+.sidebar-nav a {
+    /* ... existing styles for navigation links ... */
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    /* ... other styles ... */
+}
+.sidebar-nav a.active {
+    background-color: #e6f7ff; 
+    color: #007bff; 
+    border-left: 5px solid #007bff; 
+    padding-left: 25px; 
+}
+
+/* Dashboard Widgets (The colored boxes in the dashboard) */
+.widgets-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.widget {
+    flex: 1;
+    padding: 25px;
+    border-radius: 12px; /* Smoother corners */
+    color: white;
+    font-size: 1.2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.widget-active-jobs { background-color: #007bff; }
+.widget-total-applicants { background-color: #28aa46; }
+.widget-hired { background-color: #6f42c1; }
+
+/* Job Card Styling for Management Tab */
+.job-management-table {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
